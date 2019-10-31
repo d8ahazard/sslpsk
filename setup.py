@@ -17,7 +17,7 @@ from setuptools import setup, Extension
 import sys
 
 if sys.platform == 'win32':
-    LIB_NAMES = ['ssleay32MD', 'libeay32MD']
+    LIB_NAMES = ['ssleay32', 'libeay32']
     LIB_FILES = ['openssl/bin/%s.dll'%lib for lib in LIB_NAMES]
 else:
     LIB_NAMES = ['ssl']
